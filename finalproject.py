@@ -74,13 +74,13 @@ def drawman (triesRemaining):
     if triesRemaining==4:
         print "O"
     if triesRemaining==3:
-        print "/O"
+        print " O \n/"
     if triesRemaining==2:
-        print "/O\\"
+        print " O \n/|\\"
     if triesRemaining==1:
-        print "/O\ /"
+        print " O \n/|\\ \n | \n   \\"
     if triesRemaining==0: 
-        print "/O\ \/\\"
+        print " O \n/|\\ \n | \n/ \\"
 
 # Computer gets a word from the dictionary
 random_list=("Holli","hello","spark","kitty","while","thing")
