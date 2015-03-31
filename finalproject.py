@@ -123,5 +123,6 @@ if triesRemaining == 0:
     print ("You are LOSER!! The secret word was %s" % random_word)
 else:
     print ("CONGRATULATIONS. You are a GENIUS!!!")
-
+    print " O \n/|\\ \n | \n/ \\"
+    print "\033[5;35m O \n/|\\ \n | \n/ \\\033[0m"
 
