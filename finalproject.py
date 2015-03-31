@@ -70,6 +70,18 @@ def InitGuess(guess, random_word):
     for i in range (0 ,wordLength):
        guess.append("_")
 
+def drawman (triesRemaining):
+    if triesRemaining==4:
+        print "O"
+    if triesRemaining==3:
+        print "/O"
+    if triesRemaining==2:
+        print "/O\\"
+    if triesRemaining==1:
+        print "/O\ /"
+    if triesRemaining==0: 
+        print "/O\ \/\\"
+
 # Computer gets a word from the dictionary
 random_list=("Holli","hello","spark","kitty","while","thing")
 random_word=random.choice(random_list)
@@ -98,6 +110,8 @@ while triesRemaining and winner == 0 :
     if result == 0:
         triesRemaining = triesRemaining - 1
         print ("%s does not match %d tries left" % (letter, triesRemaining))
+        drawman(triesRemaining)
+
     else:
         print ("Matched %s - %d tries left" % (letter,triesRemaining))
 
@@ -109,3 +123,5 @@ if triesRemaining == 0:
     print ("You are LOSER!! The secret word was %s" % random_word)
 else:
     print ("CONGRATULATIONS. You are a GENIUS!!!")
+
+
